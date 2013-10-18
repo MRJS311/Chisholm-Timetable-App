@@ -4,7 +4,7 @@
   
   $t = new MiniTemplator;
   
-  $->readTemplateFromfile("template.html");
+  $t->readTemplateFromfile("template.html");
   
   $content = "";
   
