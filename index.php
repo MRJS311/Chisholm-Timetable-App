@@ -9,7 +9,9 @@
   $content = "";
   
   $t->setVariable ("content", $content);
+  
   $t->addBlock("content_block");
   
   $t->generateOutput();
+  
 ?>
