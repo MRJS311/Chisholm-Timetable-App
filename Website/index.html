@@ -1,0 +1,51 @@
+<!doctype html>
+<!--[if lt IE 7]> <html class="ie6 oldie"> <![endif]-->
+<!--[if IE 7]>    <html class="ie7 oldie"> <![endif]-->
+<!--[if IE 8]>    <html class="ie8 oldie"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="">
+<!--<![endif]-->
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Timetable</title>
+<link href="boilerplate.css" rel="stylesheet" type="text/css">
+<link href="webdev.css" rel="stylesheet" type="text/css">
+<!-- 
+To learn more about the conditional comments around the html tags at the top of the file:
+paulirish.com/2008/conditional-stylesheets-vs-css-hacks-answer-neither/
+
+Do the following if you're using your customized build of modernizr (http://www.modernizr.com/):
+* insert the link to your js here
+* remove the link below to the html5shiv
+* add the "no-js" class to the html tags at the top
+* you can also remove the link to respond.min.js if you included the MQ Polyfill in your modernizr build 
+-->
+<!--[if lt IE 9]>
+<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+<script src="respond.min.js"></script>
+</head>
+<body>
+<div class="gridContainer clearfix">
+  <p>
+  <header class="fluid header"><img src="chisholm-institute.jpg" alt="Chihsolm Header" width="100%" height="78px"/></header>
+  <div class="fluid body" align="center">
+    <form id="form1" name="form1" method="post" >
+      <p>Student ID:
+        <input type="text" border="1">
+      </p>
+      <p>Password:
+        <input type="text" border="1">
+      </p>
+      <p>
+        <input name="Test" type="button" id="Test" value="Enter" >
+      </p>
+    </form>
+  </div>
+  <p>
+    <footer class="fluid footer">.</footer>
+  </p>
+</div>
+</body>
+</html>
