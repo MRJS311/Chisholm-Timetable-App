@@ -16,11 +16,17 @@
   <div class="header">
 	<img src="../../../../Dip. Website Dev/Website/chisholm-institute.jpg" alt="Chisholm Logo" width="100%" height="100%" />
   </div>
-  <div class="content"><!-- TemplateBeginEditable name="contentRegion" -->
-    <p>content</p>
+  <div class="content" align="center"><!-- TemplateBeginEditable name="contentRegion" -->
+    <p>Welcome</p>
+    <p>To find your next class please choose from one of the following options.</p>
+    <p><a href="" class="link">Date</a></p>
+    <p class="link"><a href="" class="link">Time</a></p>
+    <p class="link"><a href="" class="link">Subject</a></p>
+    <p class="link"><a href="" class="link">Campus</a></p>
+    <p class="link"><a href="" class="link">Room</a></p>
   <!-- TemplateEndEditable --></div>
   <div class="footer" align="center">
-    <p><a href="../Pages/index.php" class="link">Home</a></p>
+    <p><a href="index.php" class="link">Home</a></p>
   </div>
 </div>
 </body>
