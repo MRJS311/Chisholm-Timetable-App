@@ -8,39 +8,13 @@
 <!-- TemplateEndEditable -->
 <!-- TemplateBeginEditable name="head" -->
 <!-- TemplateEndEditable -->
-<style type="text/css">
-.header {
-	background-image: url(../Images/chisholm-institute.jpg);
-	height: 100px;
-	width: 800px;
-	background-repeat: no-repeat;
-	background-attachment: fixed;
-	background-position: center center;
-	background-color: #000154;
-}
-.content {
-	height: auto;
-	width: 800px;
-	color: #FAF9F4;
-	background-color: #000154;
-}
-.wrapper {
-	width: 800px;
-	height: auto;
-}
-.footer {
-	background-color: #000154;
-	height: 50px;
-	width: 800px;
-	color: #FEFFFA;
-}
-</style>
+<link href="../../../../Dip. Website Dev/Website/ChisholmApp.css" rel="stylesheet" type="text/css" />
 </head>
 
 <body>
 <div class="wrapper">
   <div class="header">
-    <p>&nbsp;</p>
+	<img src="../../../../Dip. Website Dev/Website/chisholm-institute.jpg" alt="Chisholm Logo" width="100%" height="100%" />
   </div>
   <div class="content"><!-- TemplateBeginEditable name="contentRegion" -->
     <p>content</p>
