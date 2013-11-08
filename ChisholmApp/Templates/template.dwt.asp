@@ -20,7 +20,7 @@
     <p>content</p>
   <!-- TemplateEndEditable --></div>
   <div class="footer" align="center">
-    <p><a href="../Pages/index.php" class="link">Home</a></p>
+    <p><a href="../Pages/index.php" class="link">Home</a> | <a href="tel:1800000000" class="link">Support</a></p>
   </div>
 </div>
 </body>

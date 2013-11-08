@@ -28,13 +28,13 @@
         <input type="password" name="password" id="password" />
       </p>
       <p>
-        <input type="submit" name="submit" id="submit" value="Submit" />
+        <input name="submit" type="submit" id="submit" form="form1" formaction="home.php" value="Submit"/>
       </p>
     </form>
     </p>
   <!-- InstanceEndEditable --></div>
   <div class="footer" align="center">
-    <p><a href="index.php" class="link">Home</a></p>
+    <p><a href="index.php" class="link">Home</a> | <a href="tel:1800000000" class="link">Support</a></p>
   </div>
 </div>
 </body>

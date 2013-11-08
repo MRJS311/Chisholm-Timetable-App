@@ -19,6 +19,7 @@
   <div class="content" align="center"><!-- TemplateBeginEditable name="contentRegion" -->
     <p>Welcome</p>
     <p>To find your next class please choose from one of the following options.</p>
+    <p class="link"><a href="" class="link">Day</a></p>
     <p><a href="" class="link">Date</a></p>
     <p class="link"><a href="" class="link">Time</a></p>
     <p class="link"><a href="" class="link">Subject</a></p>
@@ -26,7 +27,7 @@
     <p class="link"><a href="" class="link">Room</a></p>
   <!-- TemplateEndEditable --></div>
   <div class="footer" align="center">
-    <p><a href="index.php" class="link">Home</a></p>
+    <p><a href="index.php" class="link">Home</a> | <a href="tel:1800000000" class="link">Support</a></p>
   </div>
 </div>
 </body>
