@@ -1,0 +1,34 @@
+@charset "utf-8";
+/* CSS Document */
+.header {
+	height: 100px;
+	width: auto;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-position: center center;
+	background-color: #000154;
+}
+.content {
+	height: auto;
+	width: auto;
+	color: #FAF9F4;
+	background-color: #000154;
+}
+.wrapper {
+	width: auto;
+	height: auto;
+}
+.footer {
+	background-color: #000154;
+	height: auto;
+	width: auto;
+	color: #FEFFFA;
+}
+a.link {
+	color: #FF0004
+}
+a.visited {
+	color: #F1B1B2
+}
+</style>
+
