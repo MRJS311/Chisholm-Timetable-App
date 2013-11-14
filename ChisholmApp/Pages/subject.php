@@ -16,10 +16,34 @@
   <div class="header">
 	<img src="../../../../Dip. Website Dev/Website/chisholm-institute.jpg" alt="Chisholm Logo" width="100%" height="100%" />
   </div>
-  <div class="content"><!-- TemplateBeginEditable name="contentRegion" -->
-    <p align="center">SUBJECT</p>
+  <div class="content">
+  <!-- TemplateBeginEditable name="contentRegion" -->
+    <p align="center">Subject</p>
+	<table width="200" border="0" align="center">
+  		<tr>
+    			<td align="right">Subject</td>
+    			<td align="left">&nbsp;</td>
+  		</tr>
+		<tr>
+    			<td align="right">Date</td>
+    			<td align="left">&nbsp;</td>
+  		</tr>
+  		<tr>
+    			<td align="right">Time</td>
+    			<td align="left">&nbsp;</td>
+  		</tr>
+  		<tr>
+    			<td align="right">Room</td>
+    			<td align="left">&nbsp;</td>
+  		</tr>
+  		<tr>
+    			<td align="right">Canpus</td>
+    			<td align="left">&nbsp;</td>
+  		</tr>
+	</table>
     <p>Subject:</p>
-  <!-- TemplateEndEditable --></div>
+  <!-- TemplateEndEditable -->
+  </div>
   <div class="footer" align="center">
     <p><a href="index.php" class="link">Home</a></p>
   </div>
