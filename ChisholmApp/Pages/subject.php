@@ -41,7 +41,6 @@
     			<td align="left">&nbsp;</td>
   		</tr>
 	</table>
-    <p>Subject:</p>
   <!-- TemplateEndEditable -->
   </div>
   <div class="footer" align="center">
