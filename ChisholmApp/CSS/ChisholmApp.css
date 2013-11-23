@@ -1,9 +1,8 @@
 @charset "utf-8";
 /* CSS Document */
 .header {
-	background-image: url(../Images/chisholm-institute.jpg);
 	height: 100px;
-	width: 800px;
+	width: auto;
 	background-repeat: no-repeat;
 	background-attachment: fixed;
 	background-position: center center;
@@ -11,19 +10,25 @@
 }
 .content {
 	height: auto;
-	width: 800px;
+	width: auto;
 	color: #FAF9F4;
 	background-color: #000154;
 }
 .wrapper {
-	width: 800px;
+	width: auto;
 	height: auto;
 }
 .footer {
 	background-color: #000154;
-	height: 50px;
-	width: 800px;
+	height: auto;
+	width: auto;
 	color: #FEFFFA;
+}
+a.link {
+	color: #FF0004
+}
+a.visited {
+	color: #F1B1B2
 }
 </style>
 
