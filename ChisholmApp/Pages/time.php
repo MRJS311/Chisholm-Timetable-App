@@ -22,23 +22,23 @@
     <table width="200" border="0" align="center">
       <tr>
         <td width="94">Time:</td>
-        <td width="96">&nbsp;</td>
+        <td width="96"><input type="text" name="time" /></td>
       </tr>
       <tr>
         <td>Date:</td>
-        <td>&nbsp;</td>
+        <td><input type="text" name="date" /></td>
       </tr>
       <tr>
         <td>Room:</td>
-        <td>&nbsp;</td>
+        <td><input type="text" name="room" /></td>
       </tr>
       <tr>
         <td>Campus:</td>
-        <td>&nbsp;</td>
+        <td><input type="text" name="campus" /></td>
       </tr>
       <tr>
         <td>Subject:</td>
-        <td>&nbsp;</td>
+        <td><input type="text" name="subject" /></td>
       </tr>
     </table>
   <!-- TemplateEndEditable -->
