@@ -11,6 +11,18 @@
 <link href="ChisholmApp.css" rel="stylesheet" type="text/css" />
 </head>
 
+<title>jQuery UI Datepicker - Default functionality</title>
+<link rel="stylesheet" href="http://code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.css">
+<script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+<script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
+
+
+<script>
+	$(function() {
+	$( "#datepicker" ).datepicker();
+	});
+</script>
+
 <body>
 <div class="wrapper">
   <div class="header">
@@ -23,7 +35,7 @@
                    <table width="200" border="0">
                     <tr>
                       <td width="78">Date:</td>
-                      <td width="106">&nbsp;</td>
+                      <td width="106"><input type="text" id="datepicker"></td>
                     </tr>
                     <tr>
                       <td>Time:</td>
