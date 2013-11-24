@@ -31,7 +31,7 @@
     <p class="link"><a href="room.php" class="link">Room</a></p>
   <!-- TemplateEndEditable --></div>
   <div class="footer" align="center">
-    <p><a href="home.php" class="link">Home</a> | <a href="tel:1800000000" class="link">Support</a></p>
+    <p><a href="home.php" class="link">Home</a> | <a href="tel:1800000000" class="link">Support</a> | <a href="logout.php" class="link">Logout</a></p>
   </div>
 </div>
 </body>
