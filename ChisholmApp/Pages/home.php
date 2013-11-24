@@ -19,16 +19,16 @@
 <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.8/jquery-ui.min.js"></script>
 <script type="text/javascript">
 
+
 $(document).ready(function() {
- 
-    $("#dp").datepicker({
+    $("#dp").datepicker({ dateFormat: 'dd/mm/yy',
         onSelect: function(dateText, inst) {
             alert(dateText);
         },
         beforeShow: function (event, ui) {
             var $link = $("#datep");
             ui.dpDiv.offset({
-                top: $link.offset().top + ss
+                top: $link.offset().top + 10,
                 right: $link.offset().right + 10
             });
         }
@@ -38,6 +38,8 @@ $(document).ready(function() {
         $("#dp").datepicker("show");
     });
 });
+var dateTypeVar = $('#datepicker').datepicker('getDate');
+$.datepicker.formatDate('dd-mm-yy', dateTypeVar);
 </script>
 
 <body>
