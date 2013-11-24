@@ -2,7 +2,6 @@
 	//Start session
 	session_start();	
 	//Unset the variables stored in session
-	unset($_SESSION['SESS_MEMBER_ID']);
 	unset($_SESSION['SESS_FIRST_NAME']);
 	unset($_SESSION['SESS_LAST_NAME']);
 ?>
@@ -44,19 +43,22 @@
 	</td>
   </tr>
   <tr>
-    <td width="116"><div align="right">Username</div></td>
-    <td width="177"><input name="username" type="text" /></td>
+    <td width="116"><div align="right">Student ID:</div></td>
+    <td width="177"><input name="StudentID" type="text" /></td>
   </tr>
   <tr>
     <td><div align="right">Password</div></td>
-    <td><input name="password" type="password" /></td>
+    <td><input name="LastName" type="password" /></td>
   </tr>
   <tr>
     <td><div align="right"></div></td>
-    <td><input name="" type="submit" value="login" /></td>
+    <td><input name="" type="submit" value="Login" /></td>
   </tr>
 </table>
     </form>
+   <FORM METHOD="LINK" ACTION="register.php">
+<INPUT TYPE="submit" VALUE="Register">
+</FORM>
     </p>
   <!-- InstanceEndEditable --></div>
   <div class="footer" align="center">

@@ -21,8 +21,8 @@
 	}
  
 	//Sanitize the POST values
-	$username = clean($_POST['username']);
-	$password = clean($_POST['password']);
+	$username = clean($_POST['StudentID']);
+	$password = clean($_POST['LastName']);
  
 	//Input Validations
 	if($username == '') {
@@ -43,7 +43,7 @@
 	}
  
 	//Create query
-	$qry="SELECT * FROM member WHERE username='$username' AND password='$password'";
+	$qry="SELECT * FROM member WHERE username='$StudentID' AND password='$LastName'";
 	$result=mysql_query($qry);
  
 	//Check whether the query was successful or not
@@ -52,9 +52,8 @@
 			//Login Successful
 			session_regenerate_id();
 			$member = mysql_fetch_assoc($result);
-			$_SESSION['SESS_MEMBER_ID'] = $member['mem_id'];
-			$_SESSION['SESS_FIRST_NAME'] = $member['username'];
-			$_SESSION['SESS_LAST_NAME'] = $member['password'];
+			$_SESSION['SESS_FIRST_NAME'] = $chisholm_students['StudentID'];
+			$_SESSION['SESS_LAST_NAME'] = $chisholm_students['LastName'];
 			session_write_close();
 			header("location: home.php");
 			exit();
