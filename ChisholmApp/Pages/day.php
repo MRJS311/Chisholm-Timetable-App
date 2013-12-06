@@ -1,3 +1,42 @@
+<?php require_once('Connections/chisholm.php'); ?>
+<?php
+if (!function_exists("GetSQLValueString")) {
+function GetSQLValueString($theValue, $theType, $theDefinedValue = "", $theNotDefinedValue = "") 
+{
+  if (PHP_VERSION < 6) {
+    $theValue = get_magic_quotes_gpc() ? stripslashes($theValue) : $theValue;
+  }
+
+  $theValue = function_exists("mysql_real_escape_string") ? mysql_real_escape_string($theValue) : mysql_escape_string($theValue);
+
+  switch ($theType) {
+    case "text":
+      $theValue = ($theValue != "") ? "'" . $theValue . "'" : "NULL";
+      break;    
+    case "long":
+    case "int":
+      $theValue = ($theValue != "") ? intval($theValue) : "NULL";
+      break;
+    case "double":
+      $theValue = ($theValue != "") ? doubleval($theValue) : "NULL";
+      break;
+    case "date":
+      $theValue = ($theValue != "") ? "'" . $theValue . "'" : "NULL";
+      break;
+    case "defined":
+      $theValue = ($theValue != "") ? $theDefinedValue : $theNotDefinedValue;
+      break;
+  }
+  return $theValue;
+}
+}
+
+mysql_select_db($database_chisholm, $chisholm);
+$query_rday = "SELECT timetable.studentid, timetable.room, timetable.campuse, timetable.`time`, timetable.`day`, timetable.subjectname FROM timetable, chisholm_students WHERE chisholm_students.StudentID = timetable.studentid";
+$rday = mysql_query($query_rday, $chisholm) or die(mysql_error());
+$row_rday = mysql_fetch_assoc($rday);
+$totalRows_rday = mysql_num_rows($rday);
+?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
@@ -19,38 +58,36 @@
   <div class="content">
   <!-- TemplateBeginEditable name="contentRegion" -->
     <p align="center">Day</p>
-    <table width="200" border="0" align="center">
+    <form action="day" method="get"><table width="200" border="0" align="center">
       <tr>
         <td width="94">Day:</td>
         <td width="96">
-        	<select name="days" id="day" onchange="" size="1">
-    		  	<option value="Sunday">Sunday</option>
-    			  <option value="Monday">Monday</option>
-    			  <option value="Tuesday">Tuesday</option>
-    	  		<option value="Wednesday">Wednesday</option>
-    	  		<option value="Thursday">Thursday</option>
-    	  		<option value="Friday">Friday</option>
-    	  		<option value="Saturday">Saturday</option>
-	  	    </select>
+        	<select name="days" size="1" id="day" onchange="">
+        	  <option value="Day" <?php if (!(strcmp("Day", $row_rday['day']))) {echo "selected=\"selected\"";} ?>>Monday</option>
+        	  <option value="Day" <?php if (!(strcmp("Day", $row_rday['day']))) {echo "selected=\"selected\"";} ?>>Teusday</option>
+        	  <option value="Day" <?php if (!(strcmp("Day", $row_rday['day']))) {echo "selected=\"selected\"";} ?>>Wednesday</option>
+        	  <option value="Day" <?php if (!(strcmp("Day", $row_rday['day']))) {echo "selected=\"selected\"";} ?>>Thursday</option>
+        	  <option value="Day" <?php if (!(strcmp("Day", $row_rday['day']))) {echo "selected=\"selected\"";} ?>>Friday</option>
+            </select>
 	      </td>
       </tr>
       <tr>
         <td>Time:</td>
-        <td><input type="text" name="time" /></td>
+        <td><input name="time" type="text" value="<?php echo $row_rday['time']; ?>" /></td>
       </tr>
       <tr>
         <td>Room:</td>
-        <td><input type="text" name="room" /></td>
+        <td><input name="room" type="text" value="<?php echo $row_rday['room']; ?>" /></td>
       </tr>
       <tr>
         <td>Campus:</td>
-        <td><input type="text" name="campus" /></td>
+        <td><input name="campus" type="text" value="<?php echo $row_rday['campuse']; ?>" /></td>
       </tr>
       <tr>
         <td>Subject:</td>
-        <td><input type="text" name="subject" /></td>
+        <td><input name="subject" type="text" value="<?php echo $row_rday['subjectname']; ?>" /></td>
       </tr>
-    </table>
+    </table></form>
   <!-- TemplateEndEditable -->
   </div>
   <div class="footer" align="center">
@@ -59,3 +96,6 @@
 </div>
 </body>
 </html>
+<?php
+mysql_free_result($rday);
+?>
